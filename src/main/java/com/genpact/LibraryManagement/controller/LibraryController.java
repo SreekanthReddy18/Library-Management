@@ -84,6 +84,7 @@ public class LibraryController {
 	public String removeBook(@PathVariable String id) {
 		//LOGGER.info("Started removing Book");
 		bookService.removeBook(id);
+		System.out.println("jenkins check");
 		return "success";
 	}
 	
